@@ -1,5 +1,5 @@
 ---
-title: "prueba_individual"
+title: "hola mundo"
 ---
 
 This is a Quarto website.

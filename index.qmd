@@ -1,0 +1,53 @@
+---
+title: "proyecto_individual_prueba"
+---
+
+Este es mi primer sitio web en Quarto
+
+"Chunk": pedacito de código
+
+```{r}
+1 + 1
+```
+
+Hola este es otro chunk, se saca de la c verde en la parte superior derecha
+
+```{r}
+"hola" -> v
+```
+
+Esta es una versión más recia de Markdown que junta herramientas de r con cosas de html, latex (lenguaje dónde se pueden hacer archivos), etc.
+
+LaTex en el texto Esto es mu $\mu$
+
+Si se quiere en una línea es así
+
+$$\mu = \sigma\frac{x_i}{n}$$ Todas las herramientas de .md Markdown
+
+## Título
+
+### Otro título
+
+#### Un tercer título
+
+-   Elementos de lista desde el visual
+
+-   Esto es relativamente parecido a word
+
+1.  También se puede hacer una lista numerada
+
+2.  Numerada 2
+
+**Para poner negritas \*\* dos acá \*\***
+
+*Para poner itálicas* \* una aca \*
+
+Revisar como se imprimen los Chunks
+
+```{r}
+x <- 1:10
+print(x)
+x+2
+```
+
+Styles es más avanzado para temas de diseño (colores y así)

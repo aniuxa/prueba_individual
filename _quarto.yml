@@ -11,10 +11,12 @@ website:
         text: Ana
       - href: bruno.qmd
         text: Bruno        
-      - about.qmd
       - href: https://aniuxa.github.io/renoe/
         text: Paquete  
-
+      - href: Zya.qmd
+        text: Zya
+      - href: angelcore.qmd
+        text: Angel
 format:
   html:
     theme:

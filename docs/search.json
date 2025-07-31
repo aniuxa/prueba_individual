@@ -1,5 +1,33 @@
 [
   {
+    "objectID": "angelcore.html",
+    "href": "angelcore.html",
+    "title": "About",
+    "section": "",
+    "text": "Soy Ángel Corral Violante, persona no binaria con pronombres él/elle, estudiante de sociología que va en 7mo semestres de la carrera.\n\npi= 3.14259"
+  },
+  {
+    "objectID": "Zya.html",
+    "href": "Zya.html",
+    "title": "proyecto_individual_prueba",
+    "section": "",
+    "text": "Este es mi primer sitio web en Quarto\n“Chunk”: pedacito de código\n1 + 1\n\n[1] 2\nHola este es otro chunk, se saca de la c verde en la parte superior derecha\n\"hola\" -&gt; v\nEsta es una versión más recia de Markdown que junta herramientas de r con cosas de html, latex (lenguaje dónde se pueden hacer archivos), etc.\nLaTex en el texto Esto es mu \\(\\mu\\)\nSi se quiere en una línea es así\n\\[\\mu = \\sigma\\frac{x_i}{n}\\] Todas las herramientas de .md Markdown"
+  },
+  {
+    "objectID": "Zya.html#título",
+    "href": "Zya.html#título",
+    "title": "proyecto_individual_prueba",
+    "section": "Título",
+    "text": "Título\n\nOtro título\n\nUn tercer título\n\nElementos de lista desde el visual\nEsto es relativamente parecido a word\n\n\nTambién se puede hacer una lista numerada\nNumerada 2\n\nPara poner negritas ** dos acá **\nPara poner itálicas * una aca *\nRevisar como se imprimen los Chunks\n\nx &lt;- 1:10\nprint(x)\n\n [1]  1  2  3  4  5  6  7  8  9 10\n\nx+2\n\n [1]  3  4  5  6  7  8  9 10 11 12\n\n\nStyles es más avanzado para temas de diseño (colores y así)"
+  },
+  {
+    "objectID": "ana.html",
+    "href": "ana.html",
+    "title": "hola mundo",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -7,10 +35,45 @@
     "text": "About this site\n\n1 + 1\n\n[1] 2"
   },
   {
+    "objectID": "bruno.html",
+    "href": "bruno.html",
+    "title": "sitio_01",
+    "section": "",
+    "text": "Este sitio surge de querer entender las relaciones entre las cadenas de Markov, los valores y vectores propios y el modelado de procesos sociales.\n\n\n\nUna de sus propiedades es que son memoryless, es decir, el pasado no influye en el resultado futuro, sino que únicamente intervine el presente.\nEn los modelos en cuestión el futuro se resume en el presente como un estado, el cual emerge con el paso del tiempo con cierta probabilidad\n\n\n\n\nUn modelo de Markov se especifica identificando:\n\na) los conjuntos de estados \\(S={1, ... , m}\\),\nb) el conjunto de transiciones posibles, es decir, los pares \\((i,j)\\) oara los cuales \\(p_{ij}&gt;0\\),\nc) los valores numéricos de estos \\(p_{ij}\\) son positivos\n\nLa cadena de Markov especificada por este modelo es una secuencia de variables aletorias \\(X_0, X_1, X_2,...,\\) que toma valores en \\(S\\), y que satisface\n\\[\n\\textbf{P}(X_{n+1} = j | X_n = i, X_{n-1}= i_{n-1}, ... ,X_0=i_0)=p_{ij},\n\\] para todo \\(n\\), todos los estados \\(i,j \\in S\\), y toda posible secuencia \\(i_0, ... , i_{n-1}\\) de estados previos.\nTodos los elementos de un modelo de cadena de Markov pueden codificarse en una matrix de probabilidades de transición, la cual es simplemente un arreglo bidimensional donde el elemento de la i-jésima fila y de la j-ésima columna es \\(p_{ij}\\):\n\\[\\begin{pmatrix}\np_{11} & p_{12} & p_{13} & \\cdots & p_{1n} \\\\\np_{21} & p_{22} & p_{23} & \\cdots & p_{2n} \\\\\np_{31} & p_{32} & p_{33} & \\cdots & p_{3n} \\\\\n\\vdots & \\vdots & \\vdots & \\ddots & \\vdots \\\\\np_{n1} & p_{n2} & p_{n3} & \\cdots & p_{nn}\n\\end{pmatrix}\\]\ndonde \\(p_{ij}\\) representa la probabilidad de transición del estado \\(i\\) al estado \\(j\\).\n\n\n\nSupongamos que existen dos regiones habitables: N y S. Además, existe movilidad de personas entre las dos regiones y un estudio realizado ha revelado que las siguientes proporciones de personas se quedan en su región o que migran a la otra región en un periodo dado:\n\\[\\begin{pmatrix}\n0.5 & 0.25 \\\\\n0.5 & 0.75\n\\end{pmatrix}\\]\n\n\n\n\n\\(N_t\\) es la poblacion de la ciudad N en el momento t\n\\(S_t\\) es la poblacion de la ciudad S en el momento t\n\\(X_t = N_t + S_t\\)\n\\(\\textbf{x}_t =\\)\n\\[\\begin{pmatrix} n_t \\\\ s_t \\end{pmatrix}\\]\n\\(\\textbf{I} =\\)\n\\[\\begin{pmatrix} 1 \\\\ 1 \\end{pmatrix}\\]\nEl vector fila con la misma información es \\(\\textbf{I´}=\\begin{pmatrix} 1&1 \\end{pmatrix}\\). De forma que:\n\n\\[\n1=n_t +s_t= \\begin{pmatrix} 1&1 \\end{pmatrix} \\begin{pmatrix} 1 \\\\ 1 \\end{pmatrix} = \\textbf{I}´\\textbf{X}_t\n\\]\n\n\n\nRepresentemos la información que tenemos como un sistema de ecuaciones lineales: \\[\n\\begin{align}\nn_t = 0.5 n_{t-1} + 0.25 s_{t-1} \\\\\ns_t = 0.5 n_{t-1} + 0.75 s_{t-1}\n\\end{align}\n\\]"
+  },
+  {
+    "objectID": "bruno.html#motivaciones",
+    "href": "bruno.html#motivaciones",
+    "title": "sitio_01",
+    "section": "",
+    "text": "Este sitio surge de querer entender las relaciones entre las cadenas de Markov, los valores y vectores propios y el modelado de procesos sociales."
+  },
+  {
+    "objectID": "bruno.html#cadenas-de-markov",
+    "href": "bruno.html#cadenas-de-markov",
+    "title": "sitio_01",
+    "section": "",
+    "text": "Una de sus propiedades es que son memoryless, es decir, el pasado no influye en el resultado futuro, sino que únicamente intervine el presente.\nEn los modelos en cuestión el futuro se resume en el presente como un estado, el cual emerge con el paso del tiempo con cierta probabilidad"
+  },
+  {
+    "objectID": "bruno.html#especificación-de-modelos-de-markov",
+    "href": "bruno.html#especificación-de-modelos-de-markov",
+    "title": "sitio_01",
+    "section": "",
+    "text": "Un modelo de Markov se especifica identificando:\n\na) los conjuntos de estados \\(S={1, ... , m}\\),\nb) el conjunto de transiciones posibles, es decir, los pares \\((i,j)\\) oara los cuales \\(p_{ij}&gt;0\\),\nc) los valores numéricos de estos \\(p_{ij}\\) son positivos\n\nLa cadena de Markov especificada por este modelo es una secuencia de variables aletorias \\(X_0, X_1, X_2,...,\\) que toma valores en \\(S\\), y que satisface\n\\[\n\\textbf{P}(X_{n+1} = j | X_n = i, X_{n-1}= i_{n-1}, ... ,X_0=i_0)=p_{ij},\n\\] para todo \\(n\\), todos los estados \\(i,j \\in S\\), y toda posible secuencia \\(i_0, ... , i_{n-1}\\) de estados previos.\nTodos los elementos de un modelo de cadena de Markov pueden codificarse en una matrix de probabilidades de transición, la cual es simplemente un arreglo bidimensional donde el elemento de la i-jésima fila y de la j-ésima columna es \\(p_{ij}\\):\n\\[\\begin{pmatrix}\np_{11} & p_{12} & p_{13} & \\cdots & p_{1n} \\\\\np_{21} & p_{22} & p_{23} & \\cdots & p_{2n} \\\\\np_{31} & p_{32} & p_{33} & \\cdots & p_{3n} \\\\\n\\vdots & \\vdots & \\vdots & \\ddots & \\vdots \\\\\np_{n1} & p_{n2} & p_{n3} & \\cdots & p_{nn}\n\\end{pmatrix}\\]\ndonde \\(p_{ij}\\) representa la probabilidad de transición del estado \\(i\\) al estado \\(j\\).\n\n\n\nSupongamos que existen dos regiones habitables: N y S. Además, existe movilidad de personas entre las dos regiones y un estudio realizado ha revelado que las siguientes proporciones de personas se quedan en su región o que migran a la otra región en un periodo dado:\n\\[\\begin{pmatrix}\n0.5 & 0.25 \\\\\n0.5 & 0.75\n\\end{pmatrix}\\]\n\n\n\n\n\\(N_t\\) es la poblacion de la ciudad N en el momento t\n\\(S_t\\) es la poblacion de la ciudad S en el momento t\n\\(X_t = N_t + S_t\\)\n\\(\\textbf{x}_t =\\)\n\\[\\begin{pmatrix} n_t \\\\ s_t \\end{pmatrix}\\]\n\\(\\textbf{I} =\\)\n\\[\\begin{pmatrix} 1 \\\\ 1 \\end{pmatrix}\\]\nEl vector fila con la misma información es \\(\\textbf{I´}=\\begin{pmatrix} 1&1 \\end{pmatrix}\\). De forma que:\n\n\\[\n1=n_t +s_t= \\begin{pmatrix} 1&1 \\end{pmatrix} \\begin{pmatrix} 1 \\\\ 1 \\end{pmatrix} = \\textbf{I}´\\textbf{X}_t\n\\]\n\n\n\nRepresentemos la información que tenemos como un sistema de ecuaciones lineales: \\[\n\\begin{align}\nn_t = 0.5 n_{t-1} + 0.25 s_{t-1} \\\\\ns_t = 0.5 n_{t-1} + 0.75 s_{t-1}\n\\end{align}\n\\]"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "prueba_individual",
+    "title": "proyecto_individual_prueba",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "Este es mi primer sitio web en Quarto\n“Chunk”: pedacito de código\n1 + 1\n\n[1] 2\nHola este es otro chunk, se saca de la c verde en la parte superior derecha\n\"hola\" -&gt; v\nEsta es una versión más recia de Markdown que junta herramientas de r con cosas de html, latex (lenguaje dónde se pueden hacer archivos), etc.\nLaTex en el texto Esto es mu \\(\\mu\\)\nSi se quiere en una línea es así\n\\[\\mu = \\sigma\\frac{x_i}{n}\\] Todas las herramientas de .md Markdown"
+  },
+  {
+    "objectID": "index.html#título",
+    "href": "index.html#título",
+    "title": "proyecto_individual_prueba",
+    "section": "Título",
+    "text": "Título\n\nOtro título\n\nUn tercer título\n\nElementos de lista desde el visual\nEsto es relativamente parecido a word\n\n\nTambién se puede hacer una lista numerada\nNumerada 2\n\nPara poner negritas ** dos acá **\nPara poner itálicas * una aca *\nRevisar como se imprimen los Chunks\n\nx &lt;- 1:10\nprint(x)\n\n [1]  1  2  3  4  5  6  7  8  9 10\n\nx+2\n\n [1]  3  4  5  6  7  8  9 10 11 12\n\n\nStyles es más avanzado para temas de diseño (colores y así)"
   }
 ]

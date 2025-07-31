@@ -7,9 +7,13 @@ website:
   title: "prueba_individual"
   navbar:
     left:
-      - href: index.qmd
-        text: Home
+      - href: ana.qmd
+        text: Ana
+      - href: bruno.qmd
+        text: Bruno        
       - about.qmd
+      - href: https://aniuxa.github.io/renoe/
+        text: Paquete  
 
 format:
   html:
